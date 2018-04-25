@@ -1,8 +1,0 @@
-.vscode
-.travis.yml
-dist/**/test
-dist/**/node_modules
-test
-scripts
-tsconfig.json
-docs
