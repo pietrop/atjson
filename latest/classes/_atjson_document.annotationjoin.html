@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Filter | @atjson</title>
+	<title>AnnotationJoin | @atjson</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_atjson_document.html">@atjson/document</a>
 				</li>
 				<li>
-					<a href="_atjson_document.filter.html">Filter</a>
+					<a href="_atjson_document.annotationjoin.html">AnnotationJoin</a>
 				</li>
 			</ul>
-			<h1>Interface Filter</h1>
+			<h1>Class AnnotationJoin</h1>
 		</div>
 	</div>
 </header>
@@ -73,13 +73,90 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Filter</span>
+						<span class="target">AnnotationJoin</span>
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel tsd-kind-interface tsd-parent-kind-external-module">
+			<section class="tsd-panel tsd-kind-class tsd-parent-kind-external-module">
 				<h3 class="tsd-before-signature">Indexable</h3>
-				<div class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></div>
+				<div class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="../modules/_atjson_document.html#joinableannotation" class="tsd-signature-type">JoinableAnnotation</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_atjson_document.html#joinableannotation" class="tsd-signature-type">JoinableAnnotation</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">any</span></div>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_atjson_document.annotationjoin.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_atjson_document.annotationjoin.html#addjoin" class="tsd-kind-icon">add<wbr>Join</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Annotation<wbr>Join<span class="tsd-signature-symbol">(</span>left<span class="tsd-signature-symbol">: </span><a href="../modules/_atjson_document.html#joinableannotation" class="tsd-signature-type">JoinableAnnotation</a>, name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_atjson_document.annotationjoin.html" class="tsd-signature-type">AnnotationJoin</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/CondeNast-Copilot/atjson/blob/9ccdcab/packages/@atjson/document/src/query.ts#L104">document/src/query.ts:104</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>left: <a href="../modules/_atjson_document.html#joinableannotation" class="tsd-signature-type">JoinableAnnotation</a></h5>
+								</li>
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_atjson_document.annotationjoin.html" class="tsd-signature-type">AnnotationJoin</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addjoin" class="tsd-anchor"></a>
+					<h3>add<wbr>Join</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Join<span class="tsd-signature-symbol">(</span>right<span class="tsd-signature-symbol">: </span><a href="../modules/_atjson_document.html#joinableannotation" class="tsd-signature-type">JoinableAnnotation</a><span class="tsd-signature-symbol">[]</span>, name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/CondeNast-Copilot/atjson/blob/9ccdcab/packages/@atjson/document/src/query.ts#L110">document/src/query.ts:110</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>right: <a href="../modules/_atjson_document.html#joinableannotation" class="tsd-signature-type">JoinableAnnotation</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -123,32 +200,58 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_atjson_document.document.html" class="tsd-kind-icon">Document</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_atjson_document.query.html" class="tsd-kind-icon">Query</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_atjson_document.annotation.html" class="tsd-kind-icon">Annotation</a>
+						<a href="_atjson_document.annotationcollection.html" class="tsd-kind-icon">Annotation<wbr>Collection</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_atjson_document.filter.html" class="tsd-kind-icon">Filter</a>
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_atjson_document.annotationjoin.html" class="tsd-kind-icon">Annotation<wbr>Join</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_atjson_document.annotationjoin.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_atjson_document.annotationjoin.html#addjoin" class="tsd-kind-icon">add<wbr>Join</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_atjson_document.flattenedrenaming.html" class="tsd-kind-icon">Flattened<wbr>Renaming</a>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_atjson_document.document.html" class="tsd-kind-icon">Document</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_atjson_document.strictmatch.html" class="tsd-kind-icon">Strict<wbr>Match</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_atjson_document.renaming.html" class="tsd-kind-icon">Renaming</a>
+						<a href="../interfaces/_atjson_document.annotation.html" class="tsd-kind-icon">Annotation</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_atjson_document.schema.html" class="tsd-kind-icon">Schema</a>
+						<a href="../interfaces/_atjson_document.flattenedrenaming.html" class="tsd-kind-icon">Flattened<wbr>Renaming</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_atjson_document.renaming.html" class="tsd-kind-icon">Renaming</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_atjson_document.schema.html" class="tsd-kind-icon">Schema</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_atjson_document.transformresult.html" class="tsd-kind-icon">Transform<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_atjson_document.html#deprecatedtransform" class="tsd-kind-icon">Deprecated<wbr>Transform</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="../modules/_atjson_document.html#display" class="tsd-kind-icon">Display</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_atjson_document.html#filterfunction" class="tsd-kind-icon">Filter<wbr>Function</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_atjson_document.html#joinfilterfunction" class="tsd-kind-icon">Join<wbr>Filter<wbr>Function</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_atjson_document.html#joinableannotation" class="tsd-kind-icon">Joinable<wbr>Annotation</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="../modules/_atjson_document.html#transform" class="tsd-kind-icon">Transform</a>
@@ -159,14 +262,17 @@
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/_atjson_document.html#clone" class="tsd-kind-icon">clone</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_atjson_document.html#flatten" class="tsd-kind-icon">flatten</a>
-					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/_atjson_document.html#flattenpropertypaths" class="tsd-kind-icon">flatten<wbr>Property<wbr>Paths</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/_atjson_document.html#get" class="tsd-kind-icon">get</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_atjson_document.html#isannotation" class="tsd-kind-icon">is<wbr>Annotation</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_atjson_document.html#isrenaming" class="tsd-kind-icon">is<wbr>Renaming</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/_atjson_document.html#matches" class="tsd-kind-icon">matches</a>
