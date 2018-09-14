@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PlainTextRenderer | @atjson</title>
+	<title>GDocsEntityMap | @atjson</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_atjson_renderer_plain_text.html">@atjson/renderer-plain-text</a>
+					<a href="../modules/_atjson_source_gdocs_paste.html">@atjson/source-gdocs-paste</a>
 				</li>
 				<li>
-					<a href="_atjson_renderer_plain_text.plaintextrenderer.html">PlainTextRenderer</a>
+					<a href="_atjson_source_gdocs_paste.gdocsentitymap.html">GDocsEntityMap</a>
 				</li>
 			</ul>
-			<h1>Class PlainTextRenderer</h1>
+			<h1>Interface GDocsEntityMap</h1>
 		</div>
 	</div>
 </header>
@@ -73,122 +73,13 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="tsd-signature-type">Renderer</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">PlainTextRenderer</span>
-							</li>
-						</ul>
+						<span class="target">GDocsEntityMap</span>
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Methods</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_atjson_renderer_plain_text.plaintextrenderer.html#render" class="tsd-kind-icon">render</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_atjson_renderer_plain_text.plaintextrenderer.html#renderannotation" class="tsd-kind-icon">render<wbr>Annotation</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_atjson_renderer_plain_text.plaintextrenderer.html#rendertext" class="tsd-kind-icon">render<wbr>Text</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_atjson_renderer_plain_text.plaintextrenderer.html#root" class="tsd-kind-icon">root</a></li>
-							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-					<a name="render" class="tsd-anchor"></a>
-					<h3>render</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">render<span class="tsd-signature-symbol">(</span>document<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Document</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HIR</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from Renderer.render</p>
-								<ul>
-									<li>Defined in renderer-plain-text/node_modules/@atjson/renderer-hir/dist/commonjs/index.d.ts:7</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>document: <span class="tsd-signature-type">Document</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HIR</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-					<a name="renderannotation" class="tsd-anchor"></a>
-					<h3>render<wbr>Annotation</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">render<wbr>Annotation<span class="tsd-signature-symbol">(</span>annotation<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HIRNode</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IterableIterator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from Renderer.renderAnnotation</p>
-								<ul>
-									<li>Defined in renderer-plain-text/node_modules/@atjson/renderer-hir/dist/commonjs/index.d.ts:5</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>annotation: <span class="tsd-signature-type">HIRNode</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IterableIterator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-					<a name="rendertext" class="tsd-anchor"></a>
-					<h3>render<wbr>Text</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">render<wbr>Text<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from Renderer.renderText</p>
-								<ul>
-									<li>Defined in renderer-plain-text/node_modules/@atjson/renderer-hir/dist/commonjs/index.d.ts:6</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>text: <span class="tsd-signature-type">string</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="root" class="tsd-anchor"></a>
-					<h3>root</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">root<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IterableIterator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/CondeNast-Copilot/atjson/blob/215a3bc/packages/@atjson/renderer-plain-text/src/index.ts#L4">renderer-plain-text/src/index.ts:4</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IterableIterator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
+			<section class="tsd-panel tsd-kind-interface tsd-parent-kind-external-module">
+				<h3 class="tsd-before-signature">Indexable</h3>
+				<div class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></div>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -209,7 +100,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_atjson_renderer_hir.html">@atjson/renderer-<wbr>hir</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_atjson_renderer_plain_text.html">@atjson/renderer-<wbr>plain-<wbr>text</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -221,7 +112,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_atjson_source_commonmark.html">@atjson/source-<wbr>commonmark</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_atjson_source_gdocs_paste.html">@atjson/source-<wbr>gdocs-<wbr>paste</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -231,27 +122,73 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_atjson_source_gdocs_paste.gdocsparser.html" class="tsd-kind-icon">GDocs<wbr>Parser</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_atjson_source_gdocs_paste.default.html" class="tsd-kind-icon">default</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_atjson_source_gdocs_paste.bold.html" class="tsd-kind-icon">Bold</a>
+					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_atjson_renderer_plain_text.plaintextrenderer.html" class="tsd-kind-icon">Plain<wbr>Text<wbr>Renderer</a>
-						<ul>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_atjson_renderer_plain_text.plaintextrenderer.html#render" class="tsd-kind-icon">render</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_atjson_renderer_plain_text.plaintextrenderer.html#renderannotation" class="tsd-kind-icon">render<wbr>Annotation</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_atjson_renderer_plain_text.plaintextrenderer.html#rendertext" class="tsd-kind-icon">render<wbr>Text</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_atjson_renderer_plain_text.plaintextrenderer.html#root" class="tsd-kind-icon">root</a>
-							</li>
-						</ul>
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_atjson_source_gdocs_paste.gdocsentitymap.html" class="tsd-kind-icon">GDocs<wbr>Entity<wbr>Map</a>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_atjson_source_gdocs_paste.gdocssource.html" class="tsd-kind-icon">GDocs<wbr>Source</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_atjson_source_gdocs_paste.gdocsstyleslice.html" class="tsd-kind-icon">GDocs<wbr>Style<wbr>Slice</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_atjson_source_gdocs_paste.heading.html" class="tsd-kind-icon">Heading</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_atjson_source_gdocs_paste.horizontalrule.html" class="tsd-kind-icon">Horizontal<wbr>Rule</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_atjson_source_gdocs_paste.italic.html" class="tsd-kind-icon">Italic</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_atjson_source_gdocs_paste.link.html" class="tsd-kind-icon">Link</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_atjson_source_gdocs_paste.list.html" class="tsd-kind-icon">List</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_atjson_source_gdocs_paste.listitem.html" class="tsd-kind-icon">List<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_atjson_source_gdocs_paste.parsestate.html" class="tsd-kind-icon">Parse<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_atjson_source_gdocs_paste.strikethrough.html" class="tsd-kind-icon">Strikethrough</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_atjson_source_gdocs_paste.transforms.html" class="tsd-kind-icon">Transforms</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_atjson_source_gdocs_paste.underline.html" class="tsd-kind-icon">Underline</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_atjson_source_gdocs_paste.html#extracthorizontalrule" class="tsd-kind-icon">extract<wbr>Horizontal<wbr>Rule</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_atjson_source_gdocs_paste.html#extractlinkstyles" class="tsd-kind-icon">extract<wbr>Link<wbr>Styles</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_atjson_source_gdocs_paste.html#extractliststyles" class="tsd-kind-icon">extract<wbr>List<wbr>Styles</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_atjson_source_gdocs_paste.html#extractparagraphstyles" class="tsd-kind-icon">extract<wbr>Paragraph<wbr>Styles</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_atjson_source_gdocs_paste.html#extracttextstyles" class="tsd-kind-icon">extract<wbr>Text<wbr>Styles</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
