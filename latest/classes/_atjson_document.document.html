@@ -91,8 +91,10 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_atjson_document.document.html#annotations" class="tsd-kind-icon">annotations</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_atjson_document.document.html#changelisteners" class="tsd-kind-icon">change<wbr>Listeners</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_atjson_document.document.html#content" class="tsd-kind-icon">content</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_atjson_document.document.html#contenttype" class="tsd-kind-icon">content<wbr>Type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_atjson_document.document.html#pendingchangeevent" class="tsd-kind-icon">pending<wbr>Change<wbr>Event</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_atjson_document.document.html#schema" class="tsd-kind-icon">schema</a></li>
 							</ul>
 						</section>
@@ -100,12 +102,14 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_atjson_document.document.html#addannotations" class="tsd-kind-icon">add<wbr>Annotations</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_atjson_document.document.html#addeventlistener" class="tsd-kind-icon">add<wbr>Event<wbr>Listener</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_atjson_document.document.html#deletetext" class="tsd-kind-icon">delete<wbr>Text</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_atjson_document.document.html#inserttext" class="tsd-kind-icon">insert<wbr>Text</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_atjson_document.document.html#objectreplacementsubstitution" class="tsd-kind-icon">object<wbr>Replacement<wbr>Substitution</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_atjson_document.document.html#removeannotation" class="tsd-kind-icon">remove<wbr>Annotation</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_atjson_document.document.html#replaceannotation" class="tsd-kind-icon">replace<wbr>Annotation</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_atjson_document.document.html#slice" class="tsd-kind-icon">slice</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_atjson_document.document.html#triggerchange" class="tsd-kind-icon">trigger<wbr>Change</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_atjson_document.document.html#where" class="tsd-kind-icon">where</a></li>
 							</ul>
 						</section>
@@ -124,7 +128,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CondeNast-Copilot/atjson/blob/3b149d2/packages/@atjson/document/src/index.ts#L14">document/src/index.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/CondeNast-Copilot/atjson/blob/4845412/packages/@atjson/document/src/index.ts#L17">document/src/index.ts:17</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -146,7 +150,17 @@
 					<div class="tsd-signature tsd-kind-icon">annotations<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_atjson_document.annotation.html" class="tsd-signature-type">Annotation</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/CondeNast-Copilot/atjson/blob/3b149d2/packages/@atjson/document/src/index.ts#L13">document/src/index.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/CondeNast-Copilot/atjson/blob/4845412/packages/@atjson/document/src/index.ts#L13">document/src/index.ts:13</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="changelisteners" class="tsd-anchor"></a>
+					<h3>change<wbr>Listeners</h3>
+					<div class="tsd-signature tsd-kind-icon">change<wbr>Listeners<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/CondeNast-Copilot/atjson/blob/4845412/packages/@atjson/document/src/index.ts#L15">document/src/index.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -156,7 +170,7 @@
 					<div class="tsd-signature tsd-kind-icon">content<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/CondeNast-Copilot/atjson/blob/3b149d2/packages/@atjson/document/src/index.ts#L11">document/src/index.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/CondeNast-Copilot/atjson/blob/4845412/packages/@atjson/document/src/index.ts#L11">document/src/index.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -166,7 +180,17 @@
 					<div class="tsd-signature tsd-kind-icon">content<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/CondeNast-Copilot/atjson/blob/3b149d2/packages/@atjson/document/src/index.ts#L12">document/src/index.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/CondeNast-Copilot/atjson/blob/4845412/packages/@atjson/document/src/index.ts#L12">document/src/index.ts:12</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="pendingchangeevent" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> pending<wbr>Change<wbr>Event</h3>
+					<div class="tsd-signature tsd-kind-icon">pending<wbr>Change<wbr>Event<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/CondeNast-Copilot/atjson/blob/4845412/packages/@atjson/document/src/index.ts#L17">document/src/index.ts:17</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -176,7 +200,7 @@
 					<div class="tsd-signature tsd-kind-icon">schema<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_atjson_document.schema.html" class="tsd-signature-type">Schema</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/CondeNast-Copilot/atjson/blob/3b149d2/packages/@atjson/document/src/index.ts#L14">document/src/index.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/CondeNast-Copilot/atjson/blob/4845412/packages/@atjson/document/src/index.ts#L14">document/src/index.ts:14</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -193,7 +217,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CondeNast-Copilot/atjson/blob/3b149d2/packages/@atjson/document/src/index.ts#L32">document/src/index.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/CondeNast-Copilot/atjson/blob/4845412/packages/@atjson/document/src/index.ts#L53">document/src/index.ts:53</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -215,6 +239,51 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addeventlistener" class="tsd-anchor"></a>
+					<h3>add<wbr>Event<wbr>Listener</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>eventName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, func<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/CondeNast-Copilot/atjson/blob/4845412/packages/@atjson/document/src/index.ts#L36">document/src/index.ts:36</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>I&#39;m on a plane; I&#39;m not sure the best approach to cross-platform event
+										listeners and don&#39;t have internet access at the moment, so I&#39;m just going
+									to quickly roll my own here. To be updated.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>eventName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>func: <span class="tsd-signature-type">function</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="deletetext" class="tsd-anchor"></a>
 					<h3>delete<wbr>Text</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -224,7 +293,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CondeNast-Copilot/atjson/blob/3b149d2/packages/@atjson/document/src/index.ts#L131">document/src/index.ts:131</a></li>
+									<li>Defined in <a href="https://github.com/CondeNast-Copilot/atjson/blob/4845412/packages/@atjson/document/src/index.ts#L184">document/src/index.ts:184</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -247,7 +316,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CondeNast-Copilot/atjson/blob/3b149d2/packages/@atjson/document/src/index.ts#L71">document/src/index.ts:71</a></li>
+									<li>Defined in <a href="https://github.com/CondeNast-Copilot/atjson/blob/4845412/packages/@atjson/document/src/index.ts#L95">document/src/index.ts:95</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -276,7 +345,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CondeNast-Copilot/atjson/blob/3b149d2/packages/@atjson/document/src/index.ts#L232">document/src/index.ts:232</a></li>
+									<li>Defined in <a href="https://github.com/CondeNast-Copilot/atjson/blob/4845412/packages/@atjson/document/src/index.ts#L311">document/src/index.ts:311</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -304,7 +373,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CondeNast-Copilot/atjson/blob/3b149d2/packages/@atjson/document/src/index.ts#L57">document/src/index.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/CondeNast-Copilot/atjson/blob/4845412/packages/@atjson/document/src/index.ts#L79">document/src/index.ts:79</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -330,7 +399,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CondeNast-Copilot/atjson/blob/3b149d2/packages/@atjson/document/src/index.ts#L64">document/src/index.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/CondeNast-Copilot/atjson/blob/4845412/packages/@atjson/document/src/index.ts#L87">document/src/index.ts:87</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -356,7 +425,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CondeNast-Copilot/atjson/blob/3b149d2/packages/@atjson/document/src/index.ts#L210">document/src/index.ts:210</a></li>
+									<li>Defined in <a href="https://github.com/CondeNast-Copilot/atjson/blob/4845412/packages/@atjson/document/src/index.ts#L289">document/src/index.ts:289</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -377,6 +446,35 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="triggerchange" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> trigger<wbr>Change</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">trigger<wbr>Change<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/CondeNast-Copilot/atjson/blob/4845412/packages/@atjson/document/src/index.ts#L347">document/src/index.ts:347</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This is really coarse, just enough to allow different code in the editor to detect
+									changes in the document without handling that change management separately.</p>
+								</div>
+								<p>Eventually it should be possible to handle this transactionally, but for
+									now we batch all changes enacted within one cycle of the event loop and
+									fire the change event only once. n.b that we don&#39;t send any information
+									about the changes here yet, but that&#39;s not to say we couldn&#39;t, but rather
+									it&#39;s not clear right now what the best approach would be so it&#39;s left
+								undefined.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="where" class="tsd-anchor"></a>
 					<h3>where</h3>
@@ -387,7 +485,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/CondeNast-Copilot/atjson/blob/3b149d2/packages/@atjson/document/src/index.ts#L52">document/src/index.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/CondeNast-Copilot/atjson/blob/4845412/packages/@atjson/document/src/index.ts#L74">document/src/index.ts:74</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -472,16 +570,25 @@
 								<a href="_atjson_document.document.html#annotations" class="tsd-kind-icon">annotations</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_atjson_document.document.html#changelisteners" class="tsd-kind-icon">change<wbr>Listeners</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_atjson_document.document.html#content" class="tsd-kind-icon">content</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_atjson_document.document.html#contenttype" class="tsd-kind-icon">content<wbr>Type</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_atjson_document.document.html#pendingchangeevent" class="tsd-kind-icon">pending<wbr>Change<wbr>Event</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_atjson_document.document.html#schema" class="tsd-kind-icon">schema</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_atjson_document.document.html#addannotations" class="tsd-kind-icon">add<wbr>Annotations</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_atjson_document.document.html#addeventlistener" class="tsd-kind-icon">add<wbr>Event<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_atjson_document.document.html#deletetext" class="tsd-kind-icon">delete<wbr>Text</a>
@@ -500,6 +607,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_atjson_document.document.html#slice" class="tsd-kind-icon">slice</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_atjson_document.document.html#triggerchange" class="tsd-kind-icon">trigger<wbr>Change</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_atjson_document.document.html#where" class="tsd-kind-icon">where</a>
