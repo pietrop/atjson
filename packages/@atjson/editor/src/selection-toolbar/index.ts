@@ -1,7 +1,8 @@
-import WebComponent from './mixins/component';
+import Component from '../component';
+import template from './template.html';
 
-export default class SelectionToolbar extends WebComponent {
-  static template = ``;
+export default class SelectionToolbar extends Component {
+  static template = template;
 
   static style = `
     :host {

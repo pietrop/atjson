@@ -1,4 +1,4 @@
-export type EventCallback = (evt: Event) => boolean;
+type EventCallback = (evt: Event) => boolean;
 
 export interface EventHandlerDefinitions {
   [key: string]: string | EventCallback;
@@ -28,6 +28,17 @@ function getEventNameAndElement(element: HTMLElement, definition: string) {
   }
 }
 
+interface TemplateElement extends HTMLElement {
+  content: Node;
+}
+
+export function define(name: string, component: typeof HTMLElement) {
+  if (!window.customElements.get(name)) {
+    window.customElements.define(name, component);
+  }
+  return component;
+}
+
 /**
  * The events mixin is a Backbone-flavored event management system
  * that automatically sets up and tears down events on web components
@@ -38,9 +49,9 @@ function getEventNameAndElement(element: HTMLElement, definition: string) {
  * table to the events that you'd like to attach to your component.
  *
  * ```js
- * import events from './mixins/events';
+ * import Component from './component';
  *
- * export default TextSelection extends events(HTMLElement) {
+ * export default TextSelection extends Component {
  *   static events = {
  *     'selectionchange document': 'selectedTextDidChange',
  *     'mousedown': 'willSelectText',
@@ -55,8 +66,25 @@ function getEventNameAndElement(element: HTMLElement, definition: string) {
  * resizing, and selection events without using `addEventListener` /
  * `removeEventListener`.
  */
-export default class EventComponent extends HTMLElement {
+export default class WebComponent extends HTMLElement {
   static events: EventHandlerDefinitions | null;
+  static template: string;
+  static style: string | null;
+  private static compiledElement: TemplateElement;
+
+  private static get compiledTemplate(): TemplateElement {
+    if (!this.compiledElement) {
+      this.compiledElement = document.createElement('template');
+      let scopedStyles = this.style;
+      let html = this.template;
+      if (scopedStyles) {
+        html = `<style>${scopedStyles}</style>${html}`;
+      }
+      this.compiledElement.innerHTML = html;
+    }
+    return this.compiledElement;
+  }
+
   private eventHandlers: EventHandlerReferences;
 
   [key: string]: any;
@@ -64,10 +92,13 @@ export default class EventComponent extends HTMLElement {
   constructor() {
     super();
     this.eventHandlers = {};
+    let ComponentClass = this.constructor as typeof WebComponent;
+    let shadowRoot = this.attachShadow({ mode: 'open' });
+    shadowRoot.appendChild(ComponentClass.compiledTemplate.content.cloneNode(true));
   }
 
   connectedCallback() {
-    let ComponentClass = this.constructor as typeof EventComponent;
+    let ComponentClass = this.constructor as typeof WebComponent;
     let events: EventHandlerDefinitions = ComponentClass.events || {};
     Object.keys(events).forEach((definition: string) => {
       let { eventName, element } = getEventNameAndElement(this, definition);

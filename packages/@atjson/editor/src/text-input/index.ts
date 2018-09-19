@@ -1,9 +1,5 @@
-import EventComponent from './mixins/events';
-
-/* const supports = {
-  beforeinput: InputEvent.prototype.hasOwnProperty('inputType')
-};
-*/
+import Component from '../component';
+import template from './template.html';
 
 interface DOMInputEventLvl2 extends InputEvent {
   dataTransfer: DataTransfer;
@@ -55,7 +51,8 @@ function getTextNodes(node: Node): Text[] {
  * promise accuracy to the level of what is provided by the
  * fidelity of the web API that's available for use in the browser.
  */
-class TextInput extends EventComponent {
+class TextInput extends Component {
+  static template = template;
   static events = {
     'beforeinput': 'beforeinput',
     'compositionend': 'compositionend',

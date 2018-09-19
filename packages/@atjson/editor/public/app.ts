@@ -1,18 +1,9 @@
 import Document from '@atjson/document';
-import '../src';
 import OffsetEditor from '../src';
 import './logo';
 
-// Web components in the registry can't be redefined,
-// so reload the page on every change
-if (module.hot) {
-  module.hot.dispose(() => {
-    window.location.reload();
-  });
-}
-
+debugger;
 document.addEventListener('DOMContentLoaded', () => {
-
   let editor: OffsetEditor = document.querySelector('offset-editor');
 
   let doc = new URL(location.toString()).searchParams.get('document');

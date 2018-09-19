@@ -1,4 +1,5 @@
-import EventComponent from './mixins/events';
+import Component from '../component';
+import template from './template.html';
 
 const TEXT_NODE_TYPE = 3;
 const DOCUMENT_POSITION_PRECEDING = 2;
@@ -69,8 +70,9 @@ function previousTextNode(node: Node): TextRangePoint {
  * @emits CustomEvent#change - called when the text selection changes
  * @emits CustomEvent#clear - called when the text selecton is cleared
  */
-class TextSelection extends EventComponent {
-
+class TextSelection extends Component {
+  static template = template;
+  static style = '.toolbar { position: absolute; display: none; }';
   static observedAttributes = ['start', 'end'];
   static events = {
     'selectionchange document': 'selectedTextDidChange',
@@ -138,10 +140,6 @@ class TextSelection extends EventComponent {
 
   connectedCallback() {
     super.connectedCallback();
-    let shadowRoot = this.attachShadow({mode: 'open'});
-    let template = document.createElement('template');
-    template.innerHTML = '<style>.toolbar { position: absolute; display: none; }</style><div class="toolbar"><slot name="toolbar"></slot></div><slot></slot>';
-    shadowRoot.appendChild(template.content.cloneNode(true));
 
     // Setup observers so when the underlying text changes,
     // we update the text nodes that we want to map our selection from

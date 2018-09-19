@@ -1,6 +1,6 @@
-import WebComponent from '../src/mixins/component';
+import { Component } from '../src';
 
-export default class OffsetLogo extends WebComponent {
+export default class OffsetLogo extends Component {
 
   static template = '<canvas></canvas>';
   static style = 'canvas { width: 300px; height: 150px; }';
