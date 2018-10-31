@@ -23,6 +23,7 @@ The breakdown of modules in this repository are:
 | [@atjson/source-commonmark](packages/@atjson/source-commonmark) | Conversion of CommonMark sources to AtJSON |
 | [@atjson/source-html](packages/@atjson/source-html) | Conversion of HTML sources to AtJSON |
 | [@atjson/source-gdocs-paste](packages/@atjson/source-gdocs-paste) | A source used to transform Google Docs Paste buffers into AtJSON |
+| [@atjson/source-url](packages/@atjson/source-url) | Turn URLs into rich embeds |
 
 
 #### Why another content format?
